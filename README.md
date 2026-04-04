@@ -2,11 +2,6 @@
 
 A Python implementation of a multi-stage pipeline for detecting and resolving conflicts in access control policies (XACML). The framework uses semantic similarity screening, entity validation, SPARQL structural checks, and SMT (Z3) formal verification to identify conflicting Permit/Deny rules across heterogeneous policy datasets.
 
-> **Paper:** *Unified Framework for Detecting and Resolving Policy Conflicts*  
-> **Author:** Rabea Al Haj Eid  
-> **Institution:** Princess Sumaya University for Technology (PSUT)  
-> **Year:** 2026
-
 ---
 
 ## Quick Start
@@ -71,15 +66,6 @@ policy-conflict-detection/
 │   ├── KMarket.xml             # E-commerce marketplace (5 rules)
 │   └── synthetic360.xml        # Synthetic benchmark (360 rules)
 │
-├── figures/                    # Generated proof figures (PNG)
-│   ├── 01_conflict_definition_proof.png
-│   ├── 02_similarity_distribution.png
-│   ├── 03_threshold_justification.png
-│   ├── 04_05_pipeline_stages.png
-│   ├── 06_smt_coverage.png
-│   ├── 07_runtime_performance.png
-│   ├── 08_baseline_comparison.png
-│   └── 09_dataset_generalization.png
 │
 └── results/                    # Experiment output data
     ├── summary.csv             # Per-dataset precision/recall/F1 metrics
@@ -124,24 +110,6 @@ Two CSV files are saved to `results/`:
 - `summary.csv`: Per-dataset metrics (precision, recall, F1, timing) for each pipeline stage.
 - `conflicts.csv`: Every detected conflict with rule IDs, similarity scores, SMT results, and witness requests.
 
----
-
-## 10 Research Claims Proven
-
-| # | Claim | Evidence |
-|---|-------|----------|
-| 1 | **Conflict Definition Correctness** | `01_conflict_definition_proof.png` — Z3 SAT witnesses proving each conflict |
-| 2 | **Semantic Similarity Works** | `02_similarity_distribution.png` — Score distribution histogram |
-| 3 | **Threshold 0.65 Justified** | `03_threshold_justification.png` — Precision-Recall curve, F1 vs. threshold |
-| 4 | **Entity Overlap Improves Precision** | `04_05_pipeline_stages.png` (left) — Before/after entity filtering |
-| 5 | **SPARQL Improves Accuracy** | `04_05_pipeline_stages.png` (right) — Before/after SPARQL filtering |
-| 6 | **SMT 100% Coverage** | `06_smt_coverage.png` — Pie chart of SAT/UNSAT outcomes |
-| 7 | **Runtime Feasibility** | `07_runtime_performance.png` — Timing breakdown, scalability, solve times |
-| 8 | **Beats Baselines** | `08_baseline_comparison.png` — Our pipeline vs. TF-IDF vs. Keyword |
-| 9 | **Dataset Generalization** | `09_dataset_generalization.png` — F1 and runtime across 4 datasets |
-| 10 | **Reproducibility** | `results/conflicts.csv` + random seed 42 → deterministic output |
-
----
 
 ## Reproducing the Experiment
 
@@ -168,95 +136,3 @@ python prove_paper.py
 #    - Console output shows per-dataset metrics
 ```
 
-> **Note:** The framework includes **fallback implementations** for all optional dependencies. If `sentence-transformers` is not installed, it uses TF-IDF word overlap for similarity. If `z3-solver` is not installed, it uses a deterministic heuristic for SMT verification. If `rdflib` is not installed, it uses structural string matching for SPARQL checks. The results will be qualitatively similar but not identical to the full-dependency run.
-
-### Running Individual Components
-
-```bash
-# Common Policy Model demonstration
-python src/models/cpm.py
-
-# Semantic screening only
-python src/detection/semantic_screener.py
-
-# SMT verification only
-python src/verification/smt_verifier.py
-
-# Resolution strategies
-python src/resolution/resolver.py
-
-# Full pipeline with sample policies
-python src/pipeline.py
-
-# Standalone figure generation
-python generate_figures.py
-
-# Dataset evaluation (without claim proofs)
-python evaluate_datasets.py
-```
-
----
-
-## Datasets
-
-| Dataset | Rules | Permit | Deny | Source |
-|---------|------:|-------:|-----:|--------|
-| **GEYSERS** | 15 | 15 | 0 | EU GEYSERS project — network infrastructure policies |
-| **Continue-A** | 298 | 238 | 60 | Continue-A — access control benchmark |
-| **KMarket** | 5 | 1 | 4 | E-commerce marketplace policies |
-| **Synthetic360** | 360 | 179 | 181 | Synthetic benchmark with mixed conflicts |
-
-All datasets are in **XACML 3.0** format and sourced from the [XACs-DyPol](https://github.com/) public access control policy repository.
-
----
-
-## Key Results
-
-### Pipeline Achieves High Precision on Continue-A
-
-| Stage | Precision | Recall | F1 |
-|-------|----------:|-------:|---:|
-| Similarity Only | 0.32 | 1.00 | 0.49 |
-| + Entity Overlap | 0.32 | 1.00 | 0.49 |
-| **+ SPARQL** | **1.00** | **1.00** | **1.00** |
-
-### Beats All Baselines (Average F1 Across Datasets)
-
-| Method | F1 |
-|--------|---:|
-| TF-IDF Baseline | 0.10 |
-| Keyword Overlap | 0.43 |
-| **Our Pipeline** | **0.65** |
-
----
-
-## Dependencies
-
-| Package | Required | Purpose |
-|---------|----------|---------|
-| `matplotlib` | ✅ Yes | Figure generation |
-| `numpy` | ✅ Yes | Numerical computation |
-| `sentence-transformers` | ❌ Optional | BERT embeddings for semantic screening |
-| `torch` | ❌ Optional | Required by sentence-transformers |
-| `z3-solver` | ❌ Optional | SMT formal verification |
-| `rdflib` | ❌ Optional | RDF/SPARQL structural validation |
-
----
-
-## Citation
-
-```bibtex
-@thesis{alhajeid2026unified,
-  title   = {Unified Framework for Detecting and Resolving Policy Conflicts},
-  author  = {Al Haj Eid, Rabea},
-  school  = {Princess Sumaya University for Technology},
-  year    = {2026},
-  type    = {Master's Thesis}
-}
-```
-
----
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
