@@ -1,0 +1,1219 @@
+[
+  {
+    "name": "GEYSERS",
+    "total_rules": 15,
+    "permit": 15,
+    "deny": 0,
+    "total_pairs": 105,
+    "gt_conflicts": 0,
+    "gt_sat": 0,
+    "gt_unsat": 105,
+    "gt_unknown": 0,
+    "gt_time_s": 0.0760042667388916,
+    "smt_verified_sat": 0,
+    "smt_verified_unsat": 0,
+    "smt_verified_unknown": 0,
+    "smt_verified_total": 0,
+    "embedding_time_s": 9.30598759651184,
+    "filtering_time_s": 0.006704568862915039,
+    "smt_verify_time_s": 0.0,
+    "total_time_s": 17.478042364120483,
+    "threshold_sweep": [
+      {
+        "threshold": 0.3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.75,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      },
+      {
+        "threshold": 0.85,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 0
+      }
+    ],
+    "sim": {
+      "candidates": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sim_entity": {
+      "candidates": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sim_entity_sparql": {
+      "candidates": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tfidf": {
+      "candidates": 17,
+      "tp": 0,
+      "fp": 17,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "keyword": {
+      "candidates": 67,
+      "tp": 0,
+      "fp": 67,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "witnesses": []
+  },
+  {
+    "name": "KMarket",
+    "total_rules": 5,
+    "permit": 1,
+    "deny": 4,
+    "total_pairs": 10,
+    "gt_conflicts": 4,
+    "gt_sat": 4,
+    "gt_unsat": 6,
+    "gt_unknown": 0,
+    "gt_time_s": 0.015790224075317383,
+    "smt_verified_sat": 1,
+    "smt_verified_unsat": 0,
+    "smt_verified_unknown": 0,
+    "smt_verified_total": 1,
+    "embedding_time_s": 4.791457653045654,
+    "filtering_time_s": 0.002266407012939453,
+    "smt_verify_time_s": 0.0024673938751220703,
+    "total_time_s": 11.766912698745728,
+    "threshold_sweep": [
+      {
+        "threshold": 0.3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.55,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.65,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.7,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "candidates": 4
+      },
+      {
+        "threshold": 0.75,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "candidates": 3
+      },
+      {
+        "threshold": 0.8,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "candidates": 1
+      },
+      {
+        "threshold": 0.85,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "candidates": 1
+      }
+    ],
+    "sim": {
+      "candidates": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "sim_entity": {
+      "candidates": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+    },
+    "sim_entity_sparql": {
+      "candidates": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+    },
+    "tfidf": {
+      "candidates": 1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+    },
+    "keyword": {
+      "candidates": 10,
+      "tp": 4,
+      "fp": 6,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285715
+    },
+    "witnesses": [
+      {
+        "dataset": "KMarket",
+        "rule_i": "total-amount",
+        "rule_j": "permit-rule",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.95368916",
+        "smt_result": "SAT",
+        "witness_subject": "kmarket-silver",
+        "witness_action": "",
+        "witness_resource": "",
+        "solve_time_ms": 1.0004043579101562
+      }
+    ]
+  },
+  {
+    "name": "Continue-A",
+    "total_rules": 298,
+    "permit": 238,
+    "deny": 60,
+    "total_pairs": 44253,
+    "gt_conflicts": 482,
+    "gt_sat": 482,
+    "gt_unsat": 43771,
+    "gt_unknown": 0,
+    "gt_time_s": 20.02108120918274,
+    "smt_verified_sat": 55,
+    "smt_verified_unsat": 15,
+    "smt_verified_unknown": 0,
+    "smt_verified_total": 70,
+    "embedding_time_s": 6.251743793487549,
+    "filtering_time_s": 0.6294937133789062,
+    "smt_verify_time_s": 0.1463794708251953,
+    "total_time_s": 34.09764909744263,
+    "threshold_sweep": [
+      {
+        "threshold": 0.3,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.11990632318501171,
+        "recall": 0.5311203319502075,
+        "f1": 0.19564386702330916,
+        "candidates": 2135
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.14545454545454545,
+        "recall": 0.4149377593360996,
+        "f1": 0.21540118470651587,
+        "candidates": 1375
+      },
+      {
+        "threshold": 0.75,
+        "precision": 0.19064327485380117,
+        "recall": 0.3381742738589212,
+        "f1": 0.24382946896035904,
+        "candidates": 855
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.17695473251028807,
+        "recall": 0.17842323651452283,
+        "f1": 0.17768595041322313,
+        "candidates": 486
+      },
+      {
+        "threshold": 0.85,
+        "precision": 0.33,
+        "recall": 0.13692946058091288,
+        "f1": 0.1935483870967742,
+        "candidates": 200
+      }
+    ],
+    "sim": {
+      "candidates": 2135,
+      "tp": 256,
+      "fp": 1879,
+      "fn": 226,
+      "precision": 0.11990632318501171,
+      "recall": 0.5311203319502075,
+      "f1": 0.19564386702330916
+    },
+    "sim_entity": {
+      "candidates": 562,
+      "tp": 56,
+      "fp": 506,
+      "fn": 426,
+      "precision": 0.099644128113879,
+      "recall": 0.11618257261410789,
+      "f1": 0.10727969348659004
+    },
+    "sim_entity_sparql": {
+      "candidates": 70,
+      "tp": 55,
+      "fp": 15,
+      "fn": 427,
+      "precision": 0.7857142857142857,
+      "recall": 0.11410788381742738,
+      "f1": 0.19927536231884058
+    },
+    "tfidf": {
+      "candidates": 4179,
+      "tp": 482,
+      "fp": 3697,
+      "fn": 0,
+      "precision": 0.11533859775065805,
+      "recall": 1.0,
+      "f1": 0.20682257026389186
+    },
+    "keyword": {
+      "candidates": 18537,
+      "tp": 410,
+      "fp": 18127,
+      "fn": 72,
+      "precision": 0.022117926309543075,
+      "recall": 0.8506224066390041,
+      "f1": 0.04311477995688521
+    },
+    "witnesses": [
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.16.0.4.r.1",
+        "rule_j": "RPSlist.16.0.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.94467604",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.1",
+        "rule_j": "RPSlist.22.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.94118714",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.1",
+        "rule_j": "RPSlist.18.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9377775",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.1",
+        "rule_j": "RPSlist.21.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9333964",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.4",
+        "rule_j": "RPSlist.22.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.93037117",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.16.0.4.r.4",
+        "rule_j": "RPSlist.16.0.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9297116",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review_rc",
+        "solve_time_ms": 1.024484634399414
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.17.0.1.4.r.1",
+        "rule_j": "RPSlist.17.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.929274",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info_rc",
+        "solve_time_ms": 1.0170936584472656
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.23.0.0.1.4.r.1",
+        "rule_j": "RPSlist.23.0.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92827165",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-reviewer_rc",
+        "solve_time_ms": 1.005411148071289
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.1",
+        "rule_j": "RPSlist.20.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9270518",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 0.9980201721191406
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.4",
+        "rule_j": "RPSlist.21.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92671895",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 1.0001659393310547
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.19.0.1.1.4.r.1",
+        "rule_j": "RPSlist.19.0.1.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9266561",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-submissionStatus_rc",
+        "solve_time_ms": 1.001119613647461
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.4",
+        "rule_j": "RPSlist.18.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92519677",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 1.0001659393310547
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.17.0.1.4.r.4",
+        "rule_j": "RPSlist.17.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9230962",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info_rc",
+        "solve_time_ms": 1.0008811950683594
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.4",
+        "rule_j": "RPSlist.20.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92274165",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 1.0006427764892578
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.19.0.1.1.4.r.4",
+        "rule_j": "RPSlist.19.0.1.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9216661",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-submissionStatus_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.8.0.1.r.1",
+        "rule_j": "RPSlist.8.0.4.1.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.92080605",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-info-isChairFlag_rc",
+        "solve_time_ms": 1.0080337524414062
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.8.0.4.1.r.1",
+        "rule_j": "RPSlist.8.0.4.3.2.r.1",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92080605",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-info-isChairFlag_rc",
+        "solve_time_ms": 1.0058879852294922
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.23.0.0.1.4.r.4",
+        "rule_j": "RPSlist.23.0.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.92077744",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-reviewer_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.7.0.3.1.r.1",
+        "rule_j": "RPSlist.7.0.3.3.2.r.1",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.91875297",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-info-password_rc",
+        "solve_time_ms": 1.0051727294921875
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.3.0.1.r.1",
+        "rule_j": "RPSlist.3.0.3.2.r.1",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.91873145",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-assignments_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.4.0.1.r.1",
+        "rule_j": "RPSlist.4.0.3.2.r.1",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9169432",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-conflicts_rc",
+        "solve_time_ms": 1.004934310913086
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.6.0.1.r.1",
+        "rule_j": "RPSlist.6.0.3.2.r.1",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.91382736",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "pcMember-info_rc",
+        "solve_time_ms": 2.206563949584961
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.2",
+        "rule_j": "RPSlist.22.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.90851694",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 0.99945068359375
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.2",
+        "rule_j": "RPSlist.21.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.9037922",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.16.0.4.r.2",
+        "rule_j": "RPSlist.16.0.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8997108",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review_rc",
+        "solve_time_ms": 1.3606548309326172
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.2",
+        "rule_j": "RPSlist.18.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.89589363",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.16.0.4.r.5",
+        "rule_j": "RPSlist.16.0.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.8951109",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.2",
+        "rule_j": "RPSlist.20.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8936048",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.5",
+        "rule_j": "RPSlist.22.0.0.2.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.8927434",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.5",
+        "rule_j": "RPSlist.18.0.2.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.8925177",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.17.0.1.4.r.2",
+        "rule_j": "RPSlist.17.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8901768",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info_rc",
+        "solve_time_ms": 1.0013580322265625
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.5",
+        "rule_j": "RPSlist.20.0.0.2.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.8871467",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.23.0.0.1.4.r.2",
+        "rule_j": "RPSlist.23.0.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.88692325",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-reviewer_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.19.0.1.1.4.r.2",
+        "rule_j": "RPSlist.19.0.1.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8854349",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-submissionStatus_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.23.0.0.1.4.r.5",
+        "rule_j": "RPSlist.23.0.0.1.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.88461924",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-reviewer_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.5",
+        "rule_j": "RPSlist.21.0.0.2.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.8834204",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.16.0.4.r.3",
+        "rule_j": "RPSlist.16.0.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.882731",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.3",
+        "rule_j": "RPSlist.22.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.88088906",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.19.0.1.1.4.r.5",
+        "rule_j": "RPSlist.19.0.1.1.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.87960845",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-submissionStatus_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.17.0.1.4.r.5",
+        "rule_j": "RPSlist.17.0.1.5.3.2.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.87796074",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info_rc",
+        "solve_time_ms": 1.0020732879638672
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.17.0.1.4.r.3",
+        "rule_j": "RPSlist.17.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8779565",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info_rc",
+        "solve_time_ms": 1.1184215545654297
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.19.0.1.1.4.r.3",
+        "rule_j": "RPSlist.19.0.1.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.877179",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-submissionStatus_rc",
+        "solve_time_ms": 1.0020732879638672
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.3",
+        "rule_j": "RPSlist.21.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.87577254",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 1.001596450805664
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.3",
+        "rule_j": "RPSlist.18.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.87567645",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.3",
+        "rule_j": "RPSlist.20.0.0.2.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.87504995",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.23.0.0.1.4.r.3",
+        "rule_j": "RPSlist.23.0.0.1.4.r.5",
+        "effect_i": "Permit",
+        "effect_j": "Deny",
+        "similarity": "0.8747708",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-info-reviewer_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.21.0.0.2.4.r.5",
+        "rule_j": "RPSlist.21.0.0.2.5.1.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.79340756",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsAll_rc",
+        "solve_time_ms": 1.0020732879638672
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.20.0.0.2.4.r.5",
+        "rule_j": "RPSlist.20.0.0.2.5.1.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.79177827",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-rating_rc",
+        "solve_time_ms": 0.0
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.22.0.0.2.4.r.5",
+        "rule_j": "RPSlist.22.0.0.2.5.1.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.7913988",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content-commentsPc_rc",
+        "solve_time_ms": 1.0027885437011719
+      },
+      {
+        "dataset": "Continue-A",
+        "rule_i": "RPSlist.18.0.2.4.r.5",
+        "rule_j": "RPSlist.18.0.2.5.1.r.1",
+        "effect_i": "Deny",
+        "effect_j": "Permit",
+        "similarity": "0.7830536",
+        "smt_result": "SAT",
+        "witness_subject": "pc-member",
+        "witness_action": "read",
+        "witness_resource": "paper-review-content_rc",
+        "solve_time_ms": 0.0
+      }
+    ]
+  },
+  {
+    "name": "Synthetic360",
+    "total_rules": 360,
+    "permit": 179,
+    "deny": 181,
+    "total_pairs": 64620,
+    "gt_conflicts": 0,
+    "gt_sat": 0,
+    "gt_unsat": 64620,
+    "gt_unknown": 0,
+    "gt_time_s": 4.156055450439453,
+    "smt_verified_sat": 0,
+    "smt_verified_unsat": 6917,
+    "smt_verified_unknown": 0,
+    "smt_verified_total": 6917,
+    "embedding_time_s": 8.143447399139404,
+    "filtering_time_s": 16.134950637817383,
+    "smt_verify_time_s": 0.0027582645416259766,
+    "total_time_s": 42.01252770423889,
+    "threshold_sweep": [
+      {
+        "threshold": 0.3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.75,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      },
+      {
+        "threshold": 0.85,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "candidates": 6917
+      }
+    ],
+    "sim": {
+      "candidates": 6917,
+      "tp": 0,
+      "fp": 6917,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sim_entity": {
+      "candidates": 6917,
+      "tp": 0,
+      "fp": 6917,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sim_entity_sparql": {
+      "candidates": 6917,
+      "tp": 0,
+      "fp": 6917,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tfidf": {
+      "candidates": 47632,
+      "tp": 0,
+      "fp": 47632,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "keyword": {
+      "candidates": 64620,
+      "tp": 0,
+      "fp": 64620,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "witnesses": []
+  }
+]
