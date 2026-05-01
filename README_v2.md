@@ -1,6 +1,6 @@
-# Policy Conflict Detection — Corrected v2 Pipeline
+# Policy Conflict Detection — v2 Corrected Implementation
 
-This branch ships three substantive corrections to the v1 pipeline (`prove_paper.py`, `src/parsers/xacml_parser.py`, `src/verification/smt_verifier.py`) and produces an IEEE Software-ready feature article.
+This is the corrected production version of the policy conflict detection pipeline. It fixes three critical bugs in the v1 release (`prove_paper.py`, `src/parsers/xacml_parser.py`, `src/verification/smt_verifier.py`) and includes an IEEE Software feature article ready for submission.
 
 ## What was wrong in v1
 
@@ -12,7 +12,7 @@ This branch ships three substantive corrections to the v1 pipeline (`prove_paper
 
 4. **The XACML parser ignored hierarchical inheritance.** `src/parsers/xacml_parser.py` only read each `<Rule>`'s own `<Target>`. In Continue-A every rule has an empty target and inherits its scope from the parent `<Policy>` and `<PolicySet>`, so the v1 parser collapsed all 298 rules to identical CPM scope.
 
-## What v2 fixes
+## Corrections in v2
 
 | File | Change |
 |------|--------|
@@ -23,7 +23,7 @@ This branch ships three substantive corrections to the v1 pipeline (`prove_paper
 | `src/figures_v2.py` | Six publication-quality figures at 300 DPI, PNG + PDF, IEEE Software palette. |
 | `src/build_paper_v2.py` | Builds the IEEE Software feature article (`.docx`) with embedded figures and three sidebars. |
 
-## How to run v2
+## Running the Pipeline
 
 ```bash
 git clone https://github.com/Hellscream999/policy-conflict-detection.git
@@ -37,7 +37,7 @@ python finalize_paper.py        # writes figures + paper/IEEE_Software_PolicyCon
 
 End-to-end runtime on a Windows 11 laptop, no GPU, Python 3.12: ~100 seconds.
 
-## Headline v2 numbers
+## Results
 
 | Dataset       | Rules | Pairs   | GT conflicts | SMT confirmed | Time (s) |
 |---------------|-------|---------|--------------|---------------|----------|
@@ -54,4 +54,4 @@ The Synthetic360 rules' accumulated `AnyOf` constraints are themselves unsatisfi
 
 ## Manuscript
 
-`paper/IEEE_Software_PolicyConflict_v1.docx` — IEEE Software feature article (~4,200 words, six embedded figures, three sidebars including a public debrief of the ground-truth bug). Markdown source: `paper/manuscript.md`.
+`paper/IEEE_Software_PolicyConflict_v2.docx` — IEEE Software feature article (~4,800 words, three embedded figures, three sidebars including a public debrief of the ground-truth bug, 18 references). Markdown source: `paper/manuscript.md`.
