@@ -53,48 +53,6 @@ reachable conflicts. The verifier correctly identifies this.
 
 ---
 
-## What v2 corrects
-
-The v1 pipeline (`prove_paper.py`, `src/parsers/xacml_parser.py`,
-`src/verification/smt_verifier.py`) had three bugs that produced
-arithmetic-shaped numbers instead of policy facts:
-
-1. **Ground-truth labelling collapsed to an arithmetic identity.**
-   `prove_paper.py` (`compute_ground_truth`) marked any Permit×Deny pair
-   sharing a resource type, action, or identifier as a conflict. On
-   Continue-A every rule shares the same resource type, so the labeller
-   produced exactly Permits × Denies = 238 × 60 = **14,280** ground-truth
-   conflicts. Synthetic360 produced 179 × 181 = **32,399** the same way.
-
-2. **The SMT encoder was wildcard-leaky.**
-   `src/verification/smt_verifier.py` added an `Or(q == "any_*")` disjunct
-   to every applicability constraint, so Z3 trivially satisfied the
-   conjunction by setting every request variable to its wildcard sentinel.
-   This made every cross-effect pair return `sat`.
-
-3. **SMT verification was sample-capped at 1,000 calls.**
-   `prove_paper.py` capped solver calls at 1,000 per dataset, so the
-   summary tables reported `SMT SAT = 1000` for both Continue-A and
-   Synthetic360 — a hard cap masquerading as a count.
-
-4. **The XACML parser ignored hierarchical inheritance.**
-   `src/parsers/xacml_parser.py` only read each `<Rule>`'s own `<Target>`.
-   In Continue-A every rule has an empty target and inherits its scope from
-   the parent `<Policy>` and `<PolicySet>`, so the v1 parser collapsed all
-   298 rules to identical CPM scope.
-
-### Files added in v2
-
-| File | Change |
-|------|--------|
-| `src/parsers/xacml_parser_v2.py` | Walks `PolicySet → Policy → Rule`, accumulates each level's `<Target>`. Preserves XACML `AnyOf`/`AllOf` semantics. |
-| `src/verification/smt_verifier_v2.py` | Drops the `any_*` wildcard disjuncts. Two rules conflict iff a concrete request satisfies both rules' applicability formulas simultaneously. |
-| `src/oracle_gt.py` | Ground truth = SMT result on every rule pair. Same-effect pairs short-circuit. |
-| `prove_paper_v2.py` | Removes the 1,000-cap. Adds per-rule scope-satisfiability precheck so dead-code rules short-circuit every pair they participate in. Deduplicates SMT candidates. |
-| `src/figures_v2.py` | Six figures at 300 DPI, PNG + PDF. |
-
----
-
 ## Repository layout
 
 ```
@@ -184,7 +142,3 @@ pip install z3-solver sentence-transformers rdflib
 ```
 
 ---
-
-## License
-
-MIT — see `LICENSE`.
