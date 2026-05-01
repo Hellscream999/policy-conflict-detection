@@ -1,7 +1,7 @@
 """
 figures_v2.py
 =============
-Generate publication-quality figures for the IEEE Software feature.
+Generate publication-quality figures from the v2 pipeline results.
 
 Reads results_v2/summary.csv, results_v2/threshold_sweep.csv,
 results_v2/conflicts.csv. Writes 6 figures into results_v2/figures/.

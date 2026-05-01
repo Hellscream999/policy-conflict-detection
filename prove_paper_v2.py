@@ -1,7 +1,7 @@
 """
 prove_paper_v2.py
 =================
-Corrected reproduction of paper experiments for IEEE Software submission.
+Corrected v2 pipeline runner that reproduces all experimental results.
 
 Differences from prove_paper.py (v1):
   1. XACML parser now walks PolicySet -> Policy -> Rule and inherits parent
